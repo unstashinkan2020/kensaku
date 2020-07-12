@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="kensaku.js"></script>
+        <script type="text/javascript" src="search.js"></script>
+ 
+<style  type="text/css">
+
+.search-area input[type="text"] {
+  padding: 5px 5px 3px;
+  font-size: 16px;
+  border: 1px solid #D6D6D6;
+}
+
+.search-area input[type="text"]:focus {
+  background: #F9F9F9;
+}
+
+.search-result {
+  margin-top: 20px;
+}
+.search-result__hit-num span {
+  font-weight: bold;
+}
+#search-result__list {
+  margin-top: 15px;
+}
+#search-result__list span {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px;
+  background: #F2F2F2;
+}
+.target-area {
+  margin-top: 50px;
+}
+
+
+ .search-box_label {
+    font-weight: bold;
+}
+.is-hide {
+    display: none;
+}
+
+</style>
+
+</head>
+<body>
+        <div class="wrapper">
+                <div class="search-area">
+                  <form>
+                    <input type="text" id="search-text" placeholder="検索ワードを入力">
+                  </form>
+                  <div class="search-result">
+                    <div class="search-result__hit-num"></div>
+                    <div id="search-result__list"></div>
+                  </div>
+                </div>
+    
+<form>
+    <div class="search-box">
+        <span class="search-box_label">性別:</span>
+        <input type="radio" name="kind" value="">ALL
+        <input type="radio" name="kind" value="女">女
+        <input type="radio" name="kind" value="男">男
+    </div>
+
+    <div class="search-box">
+        <span class="search-box_label">学年:</span>
+        <input type="checkbox" name="color" value="1年">1年
+        <input type="checkbox" name="color" value="2年">2年
+    </div>  
+    <div class="search-box">
+            <span class="search-box_label">出身:</span>
+            <input type="checkbox" name="from" value="関東">関東
+            <input type="checkbox" name="from" value="長野">長野
+            <input type="checkbox" name="from" value="関西">関西
+        </div>
+</form>
+
+<ul class="list">
+    <li class="list_item" data-kind="女" data-color="1年" data-from="関東">いずみりりか<br> 性別: 女 学年: 1年 出身:関東</li>
+    <li class="list_item" data-kind="男" data-color="2年" data-from="関西">おおもりれんたろう <br>性別: 男 学年: 2年 出身:関西</li>
+    <li class="list_item" data-kind="女" data-color="2年" data-from="関東">おやまもえ <br>性別: 女 学年: 2年 出身:関東</li>
+    <li class="list_item" data-kind="女" data-color="2年" data-from="関西">かわじりわかな <br>性別: 女 学年: 2年 出身:関西</li>
+    <li class="list_item" data-kind="女" data-color="1年" data-from="関西">しばたかの <br>性別: 女 学年: 1年 出身:関西</li>
+    <li class="list_item" data-kind="男" data-color="2年" data-from="関東">ちんゆきたか <br>性別: 男 学年: 2年 出身:関東</li>
+    <li class="list_item" data-kind="女" data-color="1年" data-from="関東">ふりはたまゆ <br>性別: 女 学年: 1年 出身:関東</li>
+    <li class="list_item" data-kind="男" data-color="1年" data-from="関東">むかいりく <br>性別: 男 学年: 1年 出身:関東</li>
+    <li class="list_item" data-kind="女" data-color="2年" data-from="関東">むらかみれな <br>性別: 女 学年: 2年 出身:関東</li>
+    <li class="list_item" data-kind="男" data-color="2年" data-from="長野">やまとつばさ <br>性別: 男 学年: 2年 出身:長野 </li>
+    <li class="list_item" data-kind="男" data-color="1年" data-from="関東">やまなかしゅんと <br>性別: 男 学年: 1年 出身:関東 </li>
+    <li class="list_item" data-kind="男" data-color="2年" data-from="関東">よこかわたくや <br>性別: 男 学年: 2年 出身:関東 </li>
+</ul>
+
+
+
+</body>
+</html>
